@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ferramenta Cronômetro</title>
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand mr-2" href="/">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Seletor de Cor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contador.html">Contador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Cronômetro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="to-do-list.html">To-do List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gerador-senha.html">Gerador de Senha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contagem-regressiva.html">Contagem Regressiva</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1 pt-4">
+    <div class="container">
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="py-5 text-center">
+          <h1 class="display-5 fw-bold">
+            Cronômetro
+          </h1>
+          <p class="fs-4">
+            Utilize os botões abaixo para controlar o cronômetro
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row gap-1 justify-content-center pt-2">
+        <button class="btn btn-success btn-iniciar" type="button"><i class="bi bi-play"></i> Iniciar</button>
+        <button class="btn btn-warning btn-pausar" type="button"><i class="bi bi-pause"></i> Pausar</button>
+        <button class="btn btn-danger btn-reiniciar" type="button"><i class="bi bi-arrow-clockwise"></i> Reiniciar</button>
+      </div>
+
+      <div class="d-flex justify-content-center pt-5">
+        <p class="display-2 fw-bold resultado">0</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">Copyright © Todos os direitos reservados. 2025</span>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/cronometro.js"></script>
+
+</body>
+
+</html>

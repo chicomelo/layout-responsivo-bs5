@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ferramenta To-do List</title>
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand mr-2" href="/">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Seletor de Cor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contador.html">Contador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cronometro.html">Cronômetro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="to-do-list.html">To-do List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="gerador-senha.html">Gerador de Senha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contagem-regressiva.html">Contagem Regressiva</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1 pt-4">
+    <div class="container">
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="py-5 text-center">
+          <h1 class="display-5 fw-bold">
+            Gerador de Senha
+          </h1>
+          <p class="fs-4">
+            Selecione as opções para gerar uma senha aleatória.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-7">
+
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="numeros"
+            />
+            <label
+              class="form-check-label"
+              for="numeros"
+            >
+              Números (0-9)
+            </label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="maiusculas"
+            />
+            <label
+              class="form-check-label"
+              for="maiusculas"
+            >
+              Maiúsculas (A-Z)
+            </label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="minusculas"
+            />
+            <label
+              class="form-check-label"
+              for="minusculas"
+            >
+              Minúsculas (A-Z)
+            </label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="especiais"
+            />
+            <label
+              class="form-check-label"
+              for="especiais"
+            >
+              Especiais (!@#%$&*-_=)
+            </label>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-5">
+          <div class="w-25">
+
+            <label for="comprimento" class="form-label">Comprimento</label>
+            <input
+              type="number"
+              class="form-control"
+              id="comprimento"
+              value="6"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-center pt-2">
+        <button class="btn btn-success" id="btn-gerar-senha" type="button"><i class="bi bi-shuffle"></i> Gerear senha</button>
+      </div>
+
+      <div id="resultado" class="mt-4 p-2 d-flex flex-column gap-2 bg-dark text-white text-center">
+        Ajuste as opções e pressione o botão "Gerar"
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">Copyright © Todos os direitos reservados. 2025</span>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/gerador-senha.js"></script>
+
+</body>
+
+</html>
